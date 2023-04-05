@@ -1,3 +1,3 @@
-## ICHI'23 Workshop/Panel on Large Language Models: Opportunities and Challenges
+## ICCV CVAMD 2023 Shared Task on Multi-Label Long-Tailed Classification on Chest X-Rays
 
-https://bionlplab.github.io/2023_ichi_llm/
+https://bionlplab.github.io/2023_ICCV_CVAMD/
