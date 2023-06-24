@@ -38,6 +38,25 @@
 <br>
 
 <div class="container">
+  <h2>Submission Instructions</h2>
+  <div class="overview">
+    <ul>
+      <li><b>Submission website: <a href="https://cmt3.research.microsoft.com/CVAMD2023">https://cmt3.research.microsoft.com/CVAMD2023</a></b></li>
+      <li><b>ICCV 2023 submission template: <a href="https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php">https://iccv2023.thecvf.com/iccv2023authorkit-38--NQ.php</a></b></li>
+    </ul>
+
+    <p>Challenge participants who (i) made at least one submission during the test phase and (ii) submitted reproducible code are encouraged to write up their solutions to be presented at <a href="https://cvamd2023.github.io/">ICCV CVAMD 2023</a>! Please fully describe your methodology and results in the format of either a 4-page extended abstract or 8-page long paper, using the template provided above. Unlike ICCV 2023, peer review will be <em>single-blind</em> since the identities of participants will be known from the public leaderboard; for this reason, please include full author names and affiliations (i.e., do NOT anonymize your submission).</p>
+
+    <p>We intend to accept 5-6 CXR-LT competition track papers to CVAMD 2023, nominating 2-3 of these papers to be presented as orals. Note that 4-page submissions may be accepted and presented as posters, however they will NOT be published in ICCV proceedings. Only full 8-page submissions may be published in proceedings and presented as orals during the workshop.</p>
+
+    <p><b>When submitting, be sure to click "+ Create new submission..." and select "CXR-LT-2023"</b> to indicate you are submitting to the competition track of the CVAMD workshop.</p>
+  </div>
+</div>
+
+<br>
+
+
+<div class="container">
   <h2>Overview</h2>
   <div class="overview">
     <p><span><span>Chest radiography, like many diagnostic medical exams, produces a <strong>long-tailed</strong> distribution of clinical findings; while a small subset of diseases are routinely observed, the vast majority of diseases are relatively rare [1]. This poses a challenge for standard deep learning methods, which exhibit bias toward the most common classes at the expense of the important, but rare, &ldquo;tail&rdquo; classes [2]. Many existing methods [3] have been proposed to tackle this specific type of imbalance, though only recently with attention to long-tailed medical image recognition problems [4-6]. Diagnosis on chest X-rays (CXRs) is also a <strong>multi-label</strong> problem, as patients often present with multiple disease findings simultaneously; however, only a select few studies incorporate knowledge of label co-occurrence into the learning process [7-9].</span></span></p>
@@ -53,7 +72,7 @@
   <h2>Shared Task</h2>
     <div class="overview">
       <h3> Dataset </h3>
-      <p>This challenge will use an expanded version of MIMIC-CXR-JPG [4], a large benchmark dataset for automated thorax disease classification. Following [1], each CXR study in the dataset is labeled with a total of 12 new rare disease findings extracted from radiology reports. The resulting long-tailed (LT) dataset contains 377,110 CXRs, each labeled with at least one of 26 clinical findings (including a "No Finding" class).</p>
+      <p>This challenge will use an expanded version of MIMIC-CXR-JPG [10], a large benchmark dataset for automated thorax disease classification. Following Holste <em>et al.</em> [2], each CXR study in the dataset is labeled with a total of 12 new rare disease findings extracted from radiology reports. The resulting long-tailed (LT) dataset contains 377,110 CXRs, each labeled with at least one of 26 clinical findings (including a "No Finding" class).</p>
 
       <h3>Task</h3>
       <p>Given a CXR, detect all pathologies present (or predict “No Finding” if none present). To do this, you will train multi-label thorax disease classifiers on the provided labeled training data.</p>
@@ -74,10 +93,11 @@
   <h2>Tentative Schedule</h2>
     <div class="schedule">
       <p class="subtitle"><span class="announce_date">5/1/2023</span>. Training data release and competition begins</p>
-      <p class="subtitle"><span class="announce_date">7/21/2023</span>. Test data release and final evaluation begins</p>
+      <p class="subtitle"><span class="announce_date">7/14/2023</span>. Test data release and final evaluation begins</p>
+      <p class="subtitle"><span class="announce_date">7/17/2023</span>. Test phase ends and competition is closed.
       <p class="subtitle"><span class="announce_date">7/28/2023</span>. Workshop paper submissions are due</p>
-      <p class="subtitle"><span class="announce_date">8/11/2023</span>. Paper acceptance notification</p>
-      <p class="subtitle"><span class="announce_date">8/25/2023</span>. Camera-ready papers due</p>
+      <p class="subtitle"><span class="announce_date">8/4/2023</span>. Paper acceptance notification</p>
+      <p class="subtitle"><span class="announce_date">8/10/2023</span>. Camera-ready papers due</p>
       <p class="subtitle"><span class="announce_date">10/6/2023</span>. ICCV CVAMD workshop</p>
     </div>
 </div>
